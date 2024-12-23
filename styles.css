@@ -1,0 +1,61 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Stack video and buttons vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 40px;  /* Increased space between video and buttons */
+}
+
+.video {
+    width: 300px;  /* Fixed video width */
+    height: 300px; /* Fixed video height */
+    background-color: black;
+    border-radius: 10px;  /* Optional: rounded corners */
+    margin-bottom: 20px;  /* Adds space between the video and buttons */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Space between buttons */
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    height: 50px;  /* Fixed noButton height */
+    width: 120px;  /* Fixed noButton width */
+}
+
+button:focus {
+    outline: none;
+}
+
+#yesButton {
+    background-color: #28a745;
+    color: white;
+}
+
+#noButton {
+    background-color: #dc3545;
+    color: white;
+    min-width: 180px;
+    text-overflow: ellipsis;
+}
